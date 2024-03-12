@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+    <script type="application/ld+json">
+
+{  
+  "@context":"http://schema.org",
+  "@type":"Website",
+  "@id":"http:\/\/localhost:1313\/",
+  "author": {
+    "@type": "Person",
+    "name":  null ,
+    
+  },
+  "name":"ProgrammingCatTheCat Blog",
+  "description":"个人网站搭建教程（2） 上一篇我们安装了hugo，配置了github仓库，做好了个人网站搭建的准备。\n这一篇我们将真正地搭建个人网站，在本篇结束时，你就已经拥有一个自己的网站了！\n03 利用hugo新建网站和网页 首先我们在一个文件夹下新建一个hugo网站，这里我还是在E：\\MyBlog中打开gitbash（或者终端），输入：\nhugo new site 网站名\n我想把我的网站名取名为ProgrammingCatTheCat-Blog，所以我的命令是\nhugo new site ProgrammingCatTheCat-Blog\n在建立完网站之后，我想要新建一篇网页。所以，我可以打开刚刚创建的site，使用如下命令新建一个markdown文件：\nhugo new post\/test.md，表示新建一个post文件夹，在文件夹中新建test.md文件。\n这样我们就建立了一个ProgrammingCatTheCat的site，并且往其中塞进去一个文件test，很快就可以渲染可视化了。\n04 选择hugo皮肤 hugo官方有提供很多皮肤，我们可以选择自己喜欢的皮肤用来搭建博客。\n网址如下：Complete List | Hugo Themes (gohugo.io)\n我的选择是beautiful hugo,就是这个：Beautiful Hugo | Hugo Themes (gohugo.io)\n下载的时候在对应site文件夹的themes文件中下载，例如我的命令为：\ngit clone https:\/\/github.com\/halogenica\/beautifulhugo.git beautiful\n具体格式为git clone \u002b https地址 \u002b 给它命名的新文件名。\n原本的代码也可以去掉最后的beautiful，只写\ngit clone https:\/\/github.com\/halogenica\/beautifulhugo.git\n但是这样的话文件名就是原本的名字，比较长，不方便。所以我下载后给它取了个新名字beautiful\n下载好模板后，我们再返回site根目录，找到hugo.toml文件，添加一行内容： theme = \u0026quot;beautiful\u0026quot;\n这里我填beautiful，是因为我下载的模板名字叫beautiful，如果你下载的是别的模板，就需要自己修改一下theme的主题啦。\n接下来我们写一行代码，看一看效果：\nhugo server\n如果顺利的话，终端会跳出一大段话，然后让你去localhost:1313预览网页结果。\n好的，那么我们现在已经预览到了本地的静态网页，下一章就是最终章，部署网站到github托管了。\n我们不见不散！",
+  "url":"http:\/\/localhost:1313\/post\/%E5%88%A9%E7%94%A8hugo\u002bgithub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%992\/",
+  "keywords":"[]"
+}
+
+</script>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.123.7 with theme Tranquilpeak 0.5.3-BETA">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="个人网站搭建教程（2） 上一篇我们安装了hugo，配置了github仓库，做好了个人网站搭建的准备。
+这一篇我们将真正地搭建个人网站，在本篇结束时，你就已经拥有一个自己的网站了！
+03 利用hugo新建网站和网页 首先我们在一个文件夹下新建一个hugo网站，这里我还是在E：\MyBlog中打开gitbash（或者终端），输入：
+hugo new site 网站名
+我想把我的网站名取名为ProgrammingCatTheCat-Blog，所以我的命令是
+hugo new site ProgrammingCatTheCat-Blog
+在建立完网站之后，我想要新建一篇网页。所以，我可以打开刚刚创建的site，使用如下命令新建一个markdown文件：
+hugo new post/test.md，表示新建一个post文件夹，在文件夹中新建test.md文件。
+这样我们就建立了一个ProgrammingCatTheCat的site，并且往其中塞进去一个文件test，很快就可以渲染可视化了。
+04 选择hugo皮肤 hugo官方有提供很多皮肤，我们可以选择自己喜欢的皮肤用来搭建博客。
+网址如下：Complete List | Hugo Themes (gohugo.io)
+我的选择是beautiful hugo,就是这个：Beautiful Hugo | Hugo Themes (gohugo.io)
+下载的时候在对应site文件夹的themes文件中下载，例如我的命令为：
+git clone https://github.com/halogenica/beautifulhugo.git beautiful
+具体格式为git clone &#43; https地址 &#43; 给它命名的新文件名。
+原本的代码也可以去掉最后的beautiful，只写
+git clone https://github.com/halogenica/beautifulhugo.git
+但是这样的话文件名就是原本的名字，比较长，不方便。所以我下载后给它取了个新名字beautiful
+下载好模板后，我们再返回site根目录，找到hugo.toml文件，添加一行内容： theme = &quot;beautiful&quot;
+这里我填beautiful，是因为我下载的模板名字叫beautiful，如果你下载的是别的模板，就需要自己修改一下theme的主题啦。
+接下来我们写一行代码，看一看效果：
+hugo server
+如果顺利的话，终端会跳出一大段话，然后让你去localhost:1313预览网页结果。
+好的，那么我们现在已经预览到了本地的静态网页，下一章就是最终章，部署网站到github托管了。
+我们不见不散！">
+
+
+<meta property="og:description" content="个人网站搭建教程（2） 上一篇我们安装了hugo，配置了github仓库，做好了个人网站搭建的准备。
+这一篇我们将真正地搭建个人网站，在本篇结束时，你就已经拥有一个自己的网站了！
+03 利用hugo新建网站和网页 首先我们在一个文件夹下新建一个hugo网站，这里我还是在E：\MyBlog中打开gitbash（或者终端），输入：
+hugo new site 网站名
+我想把我的网站名取名为ProgrammingCatTheCat-Blog，所以我的命令是
+hugo new site ProgrammingCatTheCat-Blog
+在建立完网站之后，我想要新建一篇网页。所以，我可以打开刚刚创建的site，使用如下命令新建一个markdown文件：
+hugo new post/test.md，表示新建一个post文件夹，在文件夹中新建test.md文件。
+这样我们就建立了一个ProgrammingCatTheCat的site，并且往其中塞进去一个文件test，很快就可以渲染可视化了。
+04 选择hugo皮肤 hugo官方有提供很多皮肤，我们可以选择自己喜欢的皮肤用来搭建博客。
+网址如下：Complete List | Hugo Themes (gohugo.io)
+我的选择是beautiful hugo,就是这个：Beautiful Hugo | Hugo Themes (gohugo.io)
+下载的时候在对应site文件夹的themes文件中下载，例如我的命令为：
+git clone https://github.com/halogenica/beautifulhugo.git beautiful
+具体格式为git clone &#43; https地址 &#43; 给它命名的新文件名。
+原本的代码也可以去掉最后的beautiful，只写
+git clone https://github.com/halogenica/beautifulhugo.git
+但是这样的话文件名就是原本的名字，比较长，不方便。所以我下载后给它取了个新名字beautiful
+下载好模板后，我们再返回site根目录，找到hugo.toml文件，添加一行内容： theme = &quot;beautiful&quot;
+这里我填beautiful，是因为我下载的模板名字叫beautiful，如果你下载的是别的模板，就需要自己修改一下theme的主题啦。
+接下来我们写一行代码，看一看效果：
+hugo server
+如果顺利的话，终端会跳出一大段话，然后让你去localhost:1313预览网页结果。
+好的，那么我们现在已经预览到了本地的静态网页，下一章就是最终章，部署网站到github托管了。
+我们不见不散！">
+<meta property="og:type" content="article">
+<meta property="og:title" content="利用hugo&#43;github搭建个人网站（2）">
+<meta name="twitter:title" content="利用hugo&#43;github搭建个人网站（2）">
+<meta property="og:url" content="http://localhost:1313/post/%E5%88%A9%E7%94%A8hugo&#43;github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%992/">
+<meta property="twitter:url" content="http://localhost:1313/post/%E5%88%A9%E7%94%A8hugo&#43;github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%992/">
+<meta property="og:site_name" content="ProgrammingCatTheCat Blog">
+<meta property="og:description" content="个人网站搭建教程（2） 上一篇我们安装了hugo，配置了github仓库，做好了个人网站搭建的准备。
+这一篇我们将真正地搭建个人网站，在本篇结束时，你就已经拥有一个自己的网站了！
+03 利用hugo新建网站和网页 首先我们在一个文件夹下新建一个hugo网站，这里我还是在E：\MyBlog中打开gitbash（或者终端），输入：
+hugo new site 网站名
+我想把我的网站名取名为ProgrammingCatTheCat-Blog，所以我的命令是
+hugo new site ProgrammingCatTheCat-Blog
+在建立完网站之后，我想要新建一篇网页。所以，我可以打开刚刚创建的site，使用如下命令新建一个markdown文件：
+hugo new post/test.md，表示新建一个post文件夹，在文件夹中新建test.md文件。
+这样我们就建立了一个ProgrammingCatTheCat的site，并且往其中塞进去一个文件test，很快就可以渲染可视化了。
+04 选择hugo皮肤 hugo官方有提供很多皮肤，我们可以选择自己喜欢的皮肤用来搭建博客。
+网址如下：Complete List | Hugo Themes (gohugo.io)
+我的选择是beautiful hugo,就是这个：Beautiful Hugo | Hugo Themes (gohugo.io)
+下载的时候在对应site文件夹的themes文件中下载，例如我的命令为：
+git clone https://github.com/halogenica/beautifulhugo.git beautiful
+具体格式为git clone &#43; https地址 &#43; 给它命名的新文件名。
+原本的代码也可以去掉最后的beautiful，只写
+git clone https://github.com/halogenica/beautifulhugo.git
+但是这样的话文件名就是原本的名字，比较长，不方便。所以我下载后给它取了个新名字beautiful
+下载好模板后，我们再返回site根目录，找到hugo.toml文件，添加一行内容： theme = &quot;beautiful&quot;
+这里我填beautiful，是因为我下载的模板名字叫beautiful，如果你下载的是别的模板，就需要自己修改一下theme的主题啦。
+接下来我们写一行代码，看一看效果：
+hugo server
+如果顺利的话，终端会跳出一大段话，然后让你去localhost:1313预览网页结果。
+好的，那么我们现在已经预览到了本地的静态网页，下一章就是最终章，部署网站到github托管了。
+我们不见不散！">
+<meta name="twitter:description" content="个人网站搭建教程（2） 上一篇我们安装了hugo，配置了github仓库，做好了个人网站搭建的准备。
+这一篇我们将真正地搭建个人网站，在本篇结束时，你就已经拥有一个自己的网站了！
+03 利用hugo新建网站和网页 首先我们在一个文件夹下新建一个hugo网站，这里我还是在E：\MyBlog中打开gitbash（或者终端），输入：
+hugo new site 网站名
+我想把我的网站名取名为ProgrammingCatTheCat-Blog，所以我的命令是
+hugo new site ProgrammingCatTheCat-Blog
+在建立完网站之后，我想要新建一篇网页。所以，我可以打开刚刚创建的site，使用如下命令新建一个markdown文件：
+hugo new post/test.md，表示新建一个post文件夹，在文件夹中新建test.md文件。
+这样我们就建立了一个ProgrammingCatTheCat的site，并且往其中塞进去一个文件test，很快就可以渲染可视化了。
+04 选择hugo皮肤 hugo官方有提供很多皮肤，我们可以选择自己喜欢的皮肤用来搭建博客。
+网址如下：Complete List | Hugo Themes (gohugo.io)
+我的选择是beautiful hugo,就是这个：Beautiful Hugo | Hugo Themes (gohugo.io)
+下载的时候在对应site文件夹的themes文件中下载，例如我的命令为：
+git clone https://github.com/halogenica/beautifulhugo.git beautiful
+具体格式为git clone &#43; https地址 &#43; 给它命名的新文件名。
+原本的代码也可以去掉最后的beautiful，只写
+git clone https://github.com/halogenica/beautifulhugo.git
+但是这样的话文件名就是原本的名字，比较长，不方便。所以我下载后给它取了个新名字beautiful
+下载好模板后，我们再返回site根目录，找到hugo.toml文件，添加一行内容： theme = &quot;beautiful&quot;
+这里我填beautiful，是因为我下载的模板名字叫beautiful，如果你下载的是别的模板，就需要自己修改一下theme的主题啦。
+接下来我们写一行代码，看一看效果：
+hugo server
+如果顺利的话，终端会跳出一大段话，然后让你去localhost:1313预览网页结果。
+好的，那么我们现在已经预览到了本地的静态网页，下一章就是最终章，部署网站到github托管了。
+我们不见不散！">
+<meta property="og:locale" content="en">
+
+  
+    <meta property="article:published_time" content="2024-03-13T00:10:14">
+  
+  
+    <meta property="article:modified_time" content="2024-03-13T00:10:14">
+  
+  
+  
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+
+
+
+
+
+    <title>利用hugo&#43;github搭建个人网站（2）</title>
+
+    <link rel="icon" href="/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="http://localhost:1313/post/%E5%88%A9%E7%94%A8hugo&#43;github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%992/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    
+    <link rel="stylesheet" href="http://localhost:1313/css/style-h6ccsoet3mzkbb0wngshlfbaweimexgqcxj0h5hu4h82olsdzz6wmqdkajm.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="/" aria-label="">ProgrammingCatTheCat Blog</a>
+  </div>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="">
+  <div class="sidebar-container">
+    
+    <ul class="sidebar-buttons">
+      
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior=""
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" id="top">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title">
+      利用hugo&#43;github搭建个人网站（2）
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="2024-03-13T00:10:14&#43;08:00">
+        
+   13, 2024
+
+      </time>
+    
+    
+  </div>
+
+</div>
+          
+          <div class="post-content markdown">
+            <div class="main-content-wrap">
+              <h1 id="个人网站搭建教程2">个人网站搭建教程（2）</h1>
+<blockquote>
+<p>上一篇我们安装了hugo，配置了github仓库，做好了个人网站搭建的准备。</p>
+<p>这一篇我们将真正地搭建个人网站，在本篇结束时，你就已经拥有一个自己的网站了！</p>
+</blockquote>
+<h2 id="03-利用hugo新建网站和网页">03 利用hugo新建网站和网页</h2>
+<p>首先我们在一个文件夹下新建一个hugo网站，这里我还是在E：\MyBlog中打开gitbash（或者终端），输入：</p>
+<p><code>hugo new site 网站名</code></p>
+<p>我想把我的网站名取名为ProgrammingCatTheCat-Blog，所以我的命令是</p>
+<p><code>hugo new site ProgrammingCatTheCat-Blog</code></p>
+<p><img src="E:%5CMyBlog%5CProgrammingCatTheCat-Blog%5Ccontent%5Cpictures%5CnewSite.jpg" alt="createNewSite"></p>
+<p>在建立完网站之后，我想要新建一篇网页。所以，我可以打开刚刚创建的site，使用如下命令新建一个markdown文件：</p>
+<p><code>hugo new post/test.md</code>，表示新建一个post文件夹，在文件夹中新建test.md文件。</p>
+<p><img src="E:%5CMyBlog%5CProgrammingCatTheCat-Blog%5Ccontent%5Cpictures%5CnewMD.jpg" alt="newMD"></p>
+<p>这样我们就建立了一个ProgrammingCatTheCat的site，并且往其中塞进去一个文件test，很快就可以渲染可视化了。</p>
+<h2 id="04-选择hugo皮肤">04 选择hugo皮肤</h2>
+<p>hugo官方有提供很多皮肤，我们可以选择自己喜欢的皮肤用来搭建博客。</p>
+<p>网址如下：<a href="https://themes.gohugo.io/">Complete List | Hugo Themes (gohugo.io)</a></p>
+<p>我的选择是beautiful hugo,就是这个：<a href="https://themes.gohugo.io/themes/beautifulhugo/">Beautiful Hugo | Hugo Themes (gohugo.io)</a></p>
+<p>下载的时候在对应site文件夹的themes文件中下载，例如我的命令为：</p>
+<p><code> git clone https://github.com/halogenica/beautifulhugo.git beautiful</code></p>
+<p><img src="E:%5CMyBlog%5CProgrammingCatTheCat-Blog%5Ccontent%5Cpictures%5CthemesDownload.jpg" alt="themesDownload"></p>
+<p>具体格式为git clone + https地址 + 给它命名的新文件名。</p>
+<p>原本的代码也可以去掉最后的beautiful，只写</p>
+<p><code>git clone https://github.com/halogenica/beautifulhugo.git</code></p>
+<p>但是这样的话文件名就是原本的名字，比较长，不方便。所以我下载后给它取了个新名字beautiful</p>
+<p>下载好模板后，我们再返回site根目录，找到hugo.toml文件，添加一行内容：
+<code>theme = &quot;beautiful&quot;</code></p>
+<p><img src="E:%5CMyBlog%5CProgrammingCatTheCat-Blog%5Ccontent%5Cpictures%5ChugoToml.jpg" alt="hugoToml"></p>
+<p>这里我填beautiful，是因为我下载的模板名字叫beautiful，如果你下载的是别的模板，就需要自己修改一下theme的主题啦。</p>
+<p>接下来我们写一行代码，看一看效果：</p>
+<p><code>hugo server</code></p>
+<p>如果顺利的话，终端会跳出一大段话，然后让你去localhost:1313预览网页结果。</p>
+<p><img src="E:%5CMyBlog%5CProgrammingCatTheCat-Blog%5Ccontent%5Cpictures%5ChugoServer.jpg" alt="hugoServer"></p>
+<p>好的，那么我们现在已经预览到了本地的静态网页，下一章就是最终章，部署网站到github托管了。</p>
+<p>我们不见不散！</p>
+              
+
+
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+            
+            
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="/post/%E5%88%A9%E7%94%A8hugo&#43;github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%993/" data-tooltip="利用hugo&#43;github搭建个人网站（3）" aria-label=": 利用hugo&#43;github搭建个人网站（3）">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml"></span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="/post/%E7%9B%AE%E5%BD%95/" data-tooltip="目录" aria-label=": 目录">
+          
+              <span class="hide-xs hide-sm text-small icon-mr"></span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+  
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+            
+  
+
+
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2024 ProgrammingCatTheCat Blog. 
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="">
+        
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="/post/%E5%88%A9%E7%94%A8hugo&#43;github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%993/" data-tooltip="利用hugo&#43;github搭建个人网站（3）" aria-label=": 利用hugo&#43;github搭建个人网站（3）">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml"></span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="/post/%E7%9B%AE%E5%BD%95/" data-tooltip="目录" aria-label=": 目录">
+          
+              <span class="hide-xs hide-sm text-small icon-mr"></span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+  
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+      </div>
+      
+
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-times"></i>
+    </div>
+    
+    <h4 id="about-card-name"></h4>
+    
+    
+    
+  </div>
+</div>
+
+    
+
+    
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="http://localhost:1313/js/script-yqzy9wdlzix4lbbwdnzvwx3egsne77earqmn73v9uno8aupuph8wfguccut.min.js"></script>
+
+
+
+
+
+
+    
+  </body>
+</html>
+

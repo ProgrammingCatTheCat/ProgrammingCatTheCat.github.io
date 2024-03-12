@@ -1,0 +1,108 @@
+---
+title: "My Second Post"
+date: 2024-03-12T19:14:21+08:00
+categories:
+- category
+- subcategory
+tags:
+- hugo
+- 个人网站
+keywords:
+- tech
+#thumbnailImage: //example.com/image.jpg
+---
+
+<!--more-->
+
+# 个人网站搭建教程（2）
+
+> 上一篇我们安装了hugo，配置了github仓库，做好了个人网站搭建的准备。
+>
+> 这一篇我们将真正地搭建个人网站，在本篇结束时，你就已经拥有一个自己的网站了！
+
+
+
+## 03 利用hugo新建网站和网页
+
+首先我们在一个文件夹下新建一个hugo网站，这里我还是在E：\MyBlog中打开gitbash（或者终端），输入：
+
+`hugo new site 网站名`
+
+我想把我的网站名取名为ProgrammingCatTheCat-Blog，所以我的命令是
+
+`hugo new site ProgrammingCatTheCat-Blog`
+
+
+
+![createNewSite](..\pictures\newSite.jpg)
+
+
+
+在建立完网站之后，我想要新建一篇网页。所以，我可以打开刚刚创建的site，使用如下命令新建一个markdown文件：
+
+`hugo new post/test.md`，表示新建一个post文件夹，在文件夹中新建test.md文件。
+
+
+
+![newMD](..\pictures\newMD.jpg)
+
+这样我们就建立了一个ProgrammingCatTheCat的site，并且往其中塞进去一个文件test，很快就可以渲染可视化了。
+
+
+
+## 04 选择hugo皮肤
+
+hugo官方有提供很多皮肤，我们可以选择自己喜欢的皮肤用来搭建博客。
+
+网址如下：[Complete List | Hugo Themes (gohugo.io)](https://themes.gohugo.io/)
+
+我的选择是beautiful hugo,就是这个：[Beautiful Hugo | Hugo Themes (gohugo.io)](https://themes.gohugo.io/themes/beautifulhugo/)
+
+下载的时候在对应site文件夹的themes文件中下载，例如我的命令为：
+
+` git clone https://github.com/halogenica/beautifulhugo.git beautiful`
+
+
+
+![themesDownload](..\pictures\themesDownload.jpg)
+
+
+
+具体格式为git clone + https地址 + 给它命名的新文件名。
+
+
+
+原本的代码也可以去掉最后的beautiful，只写
+
+`git clone https://github.com/halogenica/beautifulhugo.git`
+
+
+
+但是这样的话文件名就是原本的名字，比较长，不方便。所以我下载后给它取了个新名字beautiful
+
+
+
+下载好模板后，我们再返回site根目录，找到hugo.toml文件，添加一行内容：
+`theme = "beautiful"`
+
+
+
+![hugoToml](..\pictures\hugoToml.jpg)
+
+这里我填beautiful，是因为我下载的模板名字叫beautiful，如果你下载的是别的模板，就需要自己修改一下theme的主题啦。
+
+
+
+接下来我们写一行代码，看一看效果：
+
+`hugo server`
+
+如果顺利的话，终端会跳出一大段话，然后让你去localhost:1313预览网页结果。
+
+![hugoServer](..\pictures\hugoServer.jpg)
+
+
+
+好的，那么我们现在已经预览到了本地的静态网页，下一章就是最终章，部署网站到github托管了。
+
+我们不见不散！
