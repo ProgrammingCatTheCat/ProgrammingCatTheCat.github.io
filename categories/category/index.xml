@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Category on ProgrammingCatTheCat Blog</title>
-    <link>http://localhost:1313/categories/category/</link>
+    <link>https://programmingcatthecat.github.io/categories/category/</link>
     <description>Recent content in Category on ProgrammingCatTheCat Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 12 Mar 2024 17:43:04 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/category/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://programmingcatthecat.github.io/categories/category/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>利用hugo&#43;github搭建静态个人网站（1）</title>
-      <link>http://localhost:1313/post/%E5%88%A9%E7%94%A8hugo&#43;github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%991/</link>
+      <link>https://programmingcatthecat.github.io/post/%E5%88%A9%E7%94%A8hugo&#43;github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%991/</link>
       <pubDate>Tue, 12 Mar 2024 17:43:04 +0800</pubDate>
-      <guid>http://localhost:1313/post/%E5%88%A9%E7%94%A8hugo&#43;github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%991/</guid>
+      <guid>https://programmingcatthecat.github.io/post/%E5%88%A9%E7%94%A8hugo&#43;github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%991/</guid>
       <description>个人网站搭建教程（1） 本篇博客介绍了通过hugo和github搭建个人网站的过程。&#xA;在搭建博客的时候，我也遇到了很多坑，在此记录下来，希望可以对你有一点帮助。&#xA;1.hugo配置 Hugo是一个静态网站生成器。&#xA;更具体的说，它是一个开源的个人博客框架，运行速度快，有很多网站模板和皮肤可以选择。&#xA;首先我们肯定是要下载并且配置hugo，hugo的官网如下：&#xA;Releases · gohugoio/hugo (github.com)&#xA;下拉assets可以找到各种版本，选择适配自己电脑型号的版本就好，最好选包含extended的版本，因为之后hugo皮肤配置的时候，extended适配的版本要更多一点。&#xA;解压后放到合适的目录下，比如我就把hugo放到E盘的MyBlog文件中。&#xA;解压完成后要在电脑中配置系统环境设置，开始搜索框搜索“高级系统设置”，点击“环境变量”，在“系统变量”中找到path变量，点击“编辑”，选择“新建”，把hugo添加进去。&#xA;比如我的path变量就是 “E:\MyBlog\hugo_extended_0.123.7_windows-amd64”&#xA;添加环境变量是为了让计算机可以找到hugo的位置，添加完成后重启计算机， 再次打开hugo所在的文件夹（在我这里是E：\MyBlog，然后用cmd终端或者git bash打开，输入hugo version。&#xA;如果有类似的显示，就证明hugo安装成功，可以使用啦。&#xA;2.github仓库配置 安装了hugo之后，我们就可以利用它搭建一个博客框架了。&#xA;但是具体的内容（网站中展示的文件）还需要我们自己设置。为了方便起见，我们可以选择在github中建立一个项目，每次更改之后，把文件（网页）推送到这个项目里进行储藏。&#xA;要注意的是Repository Name取名应该为：github用户名.github.io&#xA;我的github用户名是ProgrammingCatTheCat，所以我取的项目名为：ProgrammingCatTheCat.github.io&#xA;所以在我的网页部署之后，它的url也就会是：https://programmingcatthecat.github.io/&#xA;项目建成之后我们可以先把它丢一边，接下来我们需要新建网站和网页，然后用hugo渲染它们。&#xA;那么我们下篇见！</description>
     </item>
   </channel>
