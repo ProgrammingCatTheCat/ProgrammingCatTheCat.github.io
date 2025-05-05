@@ -5,8 +5,8 @@
   </div>
     
     <h2 class="welcome">projects:</h2>
-    <h2 class = "welcome" href="https://programmingcatthecat.github.io/MentalHealthPlateform/#/" target="_blank" rel="noopener noreferrer">A MentalHealthPlateform(unfinished...)</h2>
-    <video  class = "video_type" src="./assets/MentalHealthPlateform_Display.mp4" controls>MentalHealthPlateform(unfinished</video>
+    <h2 class = "welcome" href="https://programmingcatthecat.github.io/MentalHealthPlateform/#/" target="_blank" rel="noopener noreferrer">MentalHealthPlateform(unfinished...</h2>
+    <video  class = "video_type" src="./assets/MentalHealthPlateform_Display.mp4" controls>MentalHealthPlateform</video>
     <h2 class = "welcome" href="" target="_blank" rel="noopener noreferrer">PetHere app(still some fatures to be added I think...)</h2>
     <video  class = "video_type" src="./assets/PetHere_Display.mp4" controls>PetHere app</video>
     <h1>tbc tbc tbc... thats not all....</h1>
