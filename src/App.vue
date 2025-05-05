@@ -26,6 +26,10 @@
     <img alt="catpic2" src="./assets/catpic2.jpg" />
     <img alt="catpic2" src="./assets/catpic2.jpg" />
     <img alt="catpic2" src="./assets/catpic2.jpg" />
+    <img alt="catpic2" src="./assets/catpic2.jpg" />
+    <img alt="catpic2" src="./assets/catpic2.jpg" />
+    <img alt="catpic2" src="./assets/catpic2.jpg" />
+    <img alt="catpic2" src="./assets/catpic2.jpg" />
   </div>
 </template>
 
