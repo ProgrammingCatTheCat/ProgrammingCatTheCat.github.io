@@ -7,8 +7,8 @@
     <h2 class="welcome">projects:</h2>
     <h2 class = "welcome" href="https://programmingcatthecat.github.io/MentalHealthPlateform/#/" target="_blank" rel="noopener noreferrer">A MentalHealthPlateform(unfinished...)</h2>
     <video  class = "video_type" src="./assets/MentalHealthPlateform_Display.mp4" controls>A MentalHealthPlateform(unfinished...)</video>
-    <h2 class = "welcome" href="" target="_blank" rel="noopener noreferrer">PetHere app</h2>
-    <video  class = "video_type" src="./assets/PetHere_Display.mp4" controls>PetHere app(still some fatures to be added I think...)</video>
+    <h2 class = "welcome" href="" target="_blank" rel="noopener noreferrer">PetHere app(still some fatures to be added I think...)</h2>
+    <video  class = "video_type" src="./assets/PetHere_Display.mp4" controls>PetHere app</video>
     <h1>tbc tbc tbc... thats not all....</h1>
 
 
@@ -41,7 +41,14 @@ export default {
 </script>
 
 <style>
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 #app {
+  width: 100%;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -60,7 +67,7 @@ export default {
 }
 
 .video_type {
-  width: 100vw;
+  width: 100%;
   height: auto;
   display: flex;
   align-items: center;
@@ -80,7 +87,7 @@ export default {
 }
 
 .allpics img {
-  width: 300px; /* 固定每张图的宽度，可根据屏幕调整 */
+  width: 200px; /* 固定每张图的宽度，可根据屏幕调整 */
   height: auto;
   flex-shrink: 0; /* 防止图片被压缩 */
 }
